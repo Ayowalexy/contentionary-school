@@ -305,6 +305,13 @@ EXPECT STYLING
     }
 }
 
+.header_fex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: -70px;
+}
+
 @media only screen and (max-width: 768px) {
 
     .header_container {
@@ -316,6 +323,14 @@ EXPECT STYLING
     }
 
     .header_hero_container {
-        padding: 60px 40px;
+        padding: 60px 20px;
+    }
+
+    .user_image {
+        display: none;
+    }
+
+    .get_started_header {
+        margin-top: 120px;
     }
 }

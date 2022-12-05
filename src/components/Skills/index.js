@@ -54,11 +54,13 @@ const Skills = () => {
                     ))
                 }
             </div>
-            <Button>
-                I'm Interested
-            </Button>
+            <a href='https://forms.gle/rTcTymHSJ9cqREZw6' target='_blank'>
+                <Button>
+                    I'm Interested
+                </Button>
+            </a>
 
-            <div className="skills_pricing">
+            <div className="skills_pricing" id="pricing">
                 <div className="skill_pricing_box">
                     <div className="skill_pricing_box_">
                         <div className="pricing">
@@ -88,9 +90,12 @@ const Skills = () => {
                         <div className="skills_week">
                             Weekends, holidays and afterschool hours can now be productive for students. Vocational knowledge is not an option but a must for every growing child
                         </div>
-                        <Button>
-                            Yes, Let's start
-                        </Button>
+
+                        <a href='https://forms.gle/rTcTymHSJ9cqREZw6' target='_blank'>
+                            <Button>
+                                Yes, Let's start
+                            </Button>
+                        </a>
                     </div>
                     <img src={Burst} className='burst_mobile' />
                 </div>

@@ -26,9 +26,11 @@ const Launch = () => {
                         This simply means that your students will access the learning contents without coming to Contentionary.com
                     </div>
                     <div className="btn___1">
-                        <Button>
-                            I'm Interested
-                        </Button>
+                        <a href='https://forms.gle/rTcTymHSJ9cqREZw6' target='_blank'>
+                            <Button>
+                                I'm Interested
+                            </Button>
+                        </a>
                     </div>
                 </div>
                 <div className="launch_box_container_2">
@@ -51,9 +53,11 @@ const Launch = () => {
                             This simply means that your students will access the learning contents without coming to Contentionary.com
                         </div>
                         <div className="btn___1">
-                            <Button>
-                                I'm Interested
-                            </Button>
+                            <a href='https://forms.gle/rTcTymHSJ9cqREZw6' target='_blank'>
+                                <Button>
+                                    I'm Interested
+                                </Button>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -74,9 +78,11 @@ const Launch = () => {
                                 And retain 90% of the subscription fee for your contents
                             </div>
                             <div className="btn___1">
-                                <Button>
-                                    I'm Interested
-                                </Button>
+                                <a href='https://forms.gle/rTcTymHSJ9cqREZw6' target='_blank'>
+                                    <Button>
+                                        I'm Interested
+                                    </Button>
+                                </a>
                             </div>
                         </div>
                         <div className="launch_box_container_2">

@@ -191,7 +191,7 @@
 
     .launch_image {
         width: 100%;
-        height: 316px;
+        height: auto;
     }
 
     .launch_box_container .launch_header {

@@ -22,7 +22,7 @@ import { useMediaQuery } from "@mui/material";
 import './brand.styles.css'
 
 const Box = styled.div`
-    width: 178px;
+    width: auto;
     margin-left: 70px;
     height: 50px;
     background-repeat: no-repeat;

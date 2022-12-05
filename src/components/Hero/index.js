@@ -5,13 +5,16 @@ import Sim from '../../assets/svg/sim.svg';
 import Person from '../../assets/svg/person.svg';
 import Wallet from '../../assets/svg/wallet.svg';
 import Logo from '../../assets/logo.png'
+import UserImg from '../../assets/sch.png'
 import Cheburashka from '../../assets/Cheburashka.png';
 import Video from '../../assets/video.png';
 import Survey from '../../assets/Survey.png';
 import { useMediaQuery } from '@mui/material';
 import Quiz from '../../assets/Quiz.png';
 import { AiOutlineMenu } from 'react-icons/ai'
+import { useNavigate } from 'react-router-dom';
 import './hero.styles.css'
+
 
 export const Button = styled.button`
     width: 161px;
@@ -27,12 +30,18 @@ export const Button = styled.button`
     font-weight: 500;
     font-size: 14px;
     line-height: 21px;
+    cursor: pointer;
+    a {
+        color: #fff;
+        text-decoration: none;
+    }
 `
 
 
 const Hero = () => {
 
     const matches = useMediaQuery('(min-width:600px)');
+    const navigation = useNavigate()
 
     return (
         <div className='hero_container'>
@@ -42,14 +51,16 @@ const Hero = () => {
                     (
                         <div className='header_box'>
                             <div className='header_container'>
-                            <img src={Logo} />
-                                <div className='header_link'>Pricing</div>
-                                <div className='header_link'>Contact Us</div>
+                                <img src={Logo} />
+                                <a href='#pricing'><div className='header_link'>Pricing</div></a>
+                                <a href='#contact'><div className='header_link'>Contact Us</div></a>
                             </div>
                             <div className='btn'>
-                                <Button>
-                                    I'm Interested
-                                </Button>
+                                <a href='https://forms.gle/rTcTymHSJ9cqREZw6' target='_blank'>
+                                    <Button>
+                                        I'm Interested
+                                    </Button>
+                                </a>
                             </div>
                             <div className='header_menu_box' />
                         </div>
@@ -64,29 +75,36 @@ const Hero = () => {
             }
 
             <div className='header_hero_container'>
-                <div className='header_hero_text'>
-                    {
-                        matches ? <>
-                            Dear<br />
-                            School Owner or<br />
-                            Administrator
-                        </>
-                            :
-                            <>
-                                Dear School<br /> Owner or<br/>
-                                Administrator
-                            </>
-                    }
-                </div>
+                <div className='header_fex'>
+                    <div>
+                        <div className='header_hero_text'>
+                            {
+                                matches ? <>
+                                    Dear<br />
+                                    School Owner or<br />
+                                    Administrator
+                                </>
+                                    :
+                                    <>
+                                        Dear School<br /> Owner or<br />
+                                        Administrator
+                                    </>
+                            }
+                        </div>
 
-                <div className='header_hero_text_2'>
-                    Own an online I.T Academy today and make {matches && <br /> } huge profit from students engagement
+                        <div className='header_hero_text_2'>
+                            Own an online I.T Academy today and make {matches && <br />} huge profit from students engagement
+                        </div>
+                    </div>
+                    <img src={UserImg} className='user_image' />
                 </div>
 
                 <div className='get_started_header'>
-                    <Button>
-                        Get Started For Free
-                    </Button>
+                    <a href='https://forms.gle/rTcTymHSJ9cqREZw6' target='_blank'>
+                        <Button>
+                            Get Started For Free
+                        </Button>
+                    </a>
                 </div>
 
                 <div className='customize'>
@@ -120,7 +138,7 @@ const Hero = () => {
 
             <div className='expect_sections'>
                 <div className='expect_sections_header'>
-                    { matches ? <>What to expect<br /> from your online<br /> I.T Academy</> : 'What to expect from your online I.T Academy'}
+                    {matches ? <>What to expect<br /> from your online<br /> I.T Academy</> : 'What to expect from your online I.T Academy'}
                 </div>
 
                 <div className='expect_sections_'>
@@ -172,9 +190,11 @@ const Hero = () => {
             </div>
 
             <div className='section_class_btn'>
-                <Button>
-                    I'm Interested
-                </Button>
+                <a href='https://forms.gle/rTcTymHSJ9cqREZw6' target='_blank'>
+                    <Button>
+                        I'm Interested
+                    </Button>
+                </a>
             </div>
         </div>
     )

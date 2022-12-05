@@ -11,7 +11,7 @@ import './footer.styles.css';
 const Footer = () => {
     const matches = useMediaQuery('(min-width:600px)');
     return (
-        <div className="footer_container">
+        <div className="footer_container" id='contact'>
             <div className="footer_container_box">
                 <div>
                     {!matches && <img src={Logo} />}
