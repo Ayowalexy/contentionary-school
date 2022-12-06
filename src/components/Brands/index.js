@@ -21,14 +21,15 @@ import { useMediaQuery } from "@mui/material";
 
 import './brand.styles.css'
 
-const Box = styled.div`
+const Box = styled.img`
     width: auto;
-    margin-left: 70px;
-    height: 50px;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-size: center;
-    background-image: url(${props => props.img});
+    margin-left: 80px;
+    height: 60px;
+    // background-repeat: no-repeat;
+    // background-size: cover;
+    // background-size: center;
+    // background-image: url(${props => props.img});
+    src: ${props => props.img};
 
 `
 
@@ -50,7 +51,8 @@ const Brand = () => {
                         [
                             Img1, Img2, Img3, Img4, Img5, Img7, Img8, Img9, Img10, Img11, Img12, Img13, Img14, Img15
                         ].map((element, idx) => (
-                            <Box className="box__1_" key={idx} img={element} />
+                            // <Box className="box__1_" key={idx} img={element} />
+                            <img className="box__1_ img__12" key={idx} src={element} />
                         ))
                     }
                 </Marquee>
