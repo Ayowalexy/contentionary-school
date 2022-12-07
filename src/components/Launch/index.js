@@ -19,7 +19,7 @@ const Launch = () => {
             <div className="launch_box_container">
                 <div className="launch_box_container_1">
                     <div className="launch_header">
-                        Launch to your school’s{matches && <br />}website or subdomain
+                        Launch to your school’s {matches && <br />}website or subdomain
                     </div>
                     <div className="launch_text">
                         And YES, the Online Academy is setup in your school's name and brand identity.
