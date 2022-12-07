@@ -48,9 +48,8 @@ const Launch = () => {
                             Generate More revenue for your school while equiping them with future needed skills.
                             {/* Launch to your school’s{matches && <br /> }website or subdomain */}
                         </div>
-                        <div className="launch_text">
-                            And YES, the Online Academy is setup in your school's name and brand identity.
-                            This simply means that your students will access the learning contents without coming to Contentionary.com
+                        <div className="launch_text text__0">
+                            Interestingly, your school will NOT BE PAYING A DIME for this technology, rather, you will be making profit from a HUGE PERCENTAGE for every subscription done by your students or anyone that subscribes to your academy.
                         </div>
                         <div className="btn___1">
                             <a href='https://forms.gle/rTcTymHSJ9cqREZw6' target='_blank'>

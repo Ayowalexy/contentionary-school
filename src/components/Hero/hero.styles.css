@@ -6,6 +6,7 @@
 .hero_container_box {
     position: absolute;
     width: 135%;
+    z-index: -10;
     height: 1701.02px;
     left: -309px;
     top: -858.24px;
@@ -54,6 +55,7 @@
     font-size: 14px;
     line-height: 22px;
     color: #616161;
+    transition: ease 400ms all;
 }
 
 .header_hero_container {
@@ -79,6 +81,7 @@
 
 .get_started_header {
     margin-top: 70px;
+    z-index: 10000000;
 }
 
 .customize {

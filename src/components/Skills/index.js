@@ -13,12 +13,13 @@ const Skills = () => {
     const matches = useMediaQuery('(min-width:600px)');
 
     return (
-        <div className="skills_container">
+        <div className="skills_container" id="skill">
             <div className="skills_container_header">
                 Expected I.T skills{<br />}
                 for the Academy
             </div>
             <div className="students">
+
                 Students will have access to these<br /> contents all through the year
             </div>
             <div className="skills_actions">
@@ -72,8 +73,10 @@ const Skills = () => {
                             </div>
                         }
                         <div className="details">
-                            Student are expected to subscribe to any tutorial video of their choice, with fee ranging from N5,000 to N10,000 per yearly.
-                            This amount is shared 70:30 between contentionary and your school.
+                            Students are expected to subscribe to any tutorial video of their choice, with fees ranging from N5,000 to N10,000 per year. This amount is shared 70:30 between Contentionary and your school.
+                            {/* Student are expected to subscribe to any tutorial video of their choice, with fee ranging from N5,000 to N10,000 per yearly.
+                            This amount is shared 70:30 between contentionary and your school. */}
+
                         </div>
                         <div className="setup">
                             Setup is FREE

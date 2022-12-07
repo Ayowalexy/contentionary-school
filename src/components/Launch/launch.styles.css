@@ -2,6 +2,7 @@
     position: absolute;
     width: 2686.93px;
     height: 1556.25px;
+    z-index: -10;
     /* left: 2380.3px;
     top: 2742.74px; */
     top: 2700px;
@@ -10,6 +11,7 @@
     border-radius: 176px;
     transform: rotate(150.87deg);
 }
+
 
 .launch_box_container {
     width: 85%;
@@ -44,6 +46,10 @@
     padding-top: 30px;
     color: #616161;
     padding-bottom: 40px;
+}
+
+.text__0 {
+    width: 100% !important;
 }
 
 .launch_image {

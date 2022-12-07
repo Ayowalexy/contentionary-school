@@ -43,6 +43,13 @@ const Hero = () => {
     const matches = useMediaQuery('(min-width:600px)');
     const navigation = useNavigate()
 
+    const handleClick = (ele) => {
+        const element = document.querySelector(ele);
+        element.scrollIntoView({
+            behavior: "smooth"
+        })
+    }
+
     return (
         <div className='hero_container'>
             <div className='hero_container_box' />
@@ -52,8 +59,8 @@ const Hero = () => {
                         <div className='header_box'>
                             <div className='header_container'>
                                 <img src={Logo} />
-                                <a href='#pricing'><div className='header_link'>Pricing</div></a>
-                                <a href='#contact'><div className='header_link'>Contact Us</div></a>
+                                <div style={{cursor: 'pointer'}} onClick={() => handleClick('#pricing')} className='header_link'>Pricing</div>
+                                <div style={{cursor: 'pointer'}} onClick={() => handleClick('#contact')} className='header_link'>Contact Us</div>
                             </div>
                             <div className='btn'>
                                 <a href='https://forms.gle/rTcTymHSJ9cqREZw6' target='_blank'>
@@ -93,7 +100,7 @@ const Hero = () => {
                         </div>
 
                         <div className='header_hero_text_2'>
-                            Own an online I.T Academy today and make {matches && <br />} huge profit from students engagement
+                            Own an online I.T Academy today and make {matches && <br />} huge profit from students' engagement
                         </div>
                     </div>
                     <img src={UserImg} className='user_image' />
@@ -108,7 +115,7 @@ const Hero = () => {
                 </div>
 
                 <div className='customize'>
-                    Customizable to your school website and other brand identity
+                    Customizable to your school website and brand identity
                 </div>
 
                 <div className='box_actions'>
